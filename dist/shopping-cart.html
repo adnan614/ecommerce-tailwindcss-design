@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icche Puron</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto mt-10">
+      <div class="flex shadow-md my-10">
+        <div class="w-full bg-white px-10 py-10">
+          <div class="flex justify-between border-b pb-8">
+            <h1 class="font-semibold text-2xl">Shopping Cart</h1>
+            <h2 class="font-semibold text-2xl">3 Items</h2>
+          </div>
+          <div class="flex mt-10 mb-5 justify-between">
+            <h3 class="font-semibold text-gray-600 text-xs uppercase pl-16">
+              Product Details
+            </h3>
+            <div class="flex w-7/12 pl-12 space-x-52">
+              <h3 class="font-semibold text-gray-600 text-xs uppercase">
+                Quantity
+              </h3>
+              <h3 class="font-semibold text-gray-600 text-xs uppercase">
+                Price
+              </h3>
+              <h3 class="font-semibold text-gray-600 text-xs uppercase">
+                Total
+              </h3>
+            </div>
+          </div>
+          <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+            <div class="flex w-2/5 ml-4">
+              <!-- product -->
+              <div class="w-20">
+                <img
+                  class="h-24"
+                  src="data:image/webp;base64,UklGRsAFAABXRUJQVlA4ILQFAADwGgCdASplAGQAPm0yk0ekIqGhKTpJYIANiUAa2wKqBeor4/yAdTUU2FLts/Mz0Yt543mjIqtpmIf2bnKYp7SPrzjQZF/EBN1cpqtBqvkJ1Bulv+3ZR4AWWsoLiizDbSox7BfwG1VwRpQjIeKW7qJfPlLLdnNdK8f8BxNaGE77sW/LVy/VA8b2VUWhhkS6vxUVEJtlPV/hoUkHrBsXzvReLbln32R4HyFfJVqWFm1gwNQthuge/gtJeRdiI3guciXqDCiLlnrUg/zd8boIalxq4i712Ctr26Mex5rrpCqAAAD+/7atRYAL94kaBPw7c+IBQdw8NXJhgBO4bFJv+joVe/vi3xNUdwTsa80yaDkuZ2cT2B7EHz3zrWk/Q8h4cGKB+tTM3e+HUHEH+Y8SCzqGxk1Um/VKJYQDNn7hfnCX3bTz6orXcdxGxEgFfN1Ur/8kRroNM2jwsNxOHLmzX6wByd/SOY6GT/bT/MloOvy6KweQQwQm5C28Kavzgyqffa2KQWZo9UtNwg/vb7PkP7yKU9I36bHlOPc3lWRur1RALsl5Te9gBj2AuCt83ATpvIUF2kSa2NXrzVAJU76immVd6sr7fTZ1RGK4EEHv/yfhXSPLq18DkO4lXOzADs1cZf2+PQ97pUHicuG+PWOXuj2VMRbj/ksPsMMUgWWDMMfVzdyWOIcXpiU5qcHMQyuOWZRFCbM1jkHTCJa9X8qVG/57VTiy+0z8FmeLwr8EAyXEnxmq6sai4k+GFdCLvyFEpN3Yr14Wl0215jM/JtPtvFSODNTOdUDMfDAZIIMEc6Zy/7pXnlAfAQIJToqixRpvuF8MmyvYVZpcHrdfDfT+RHvbs9uXb4G/Jplk7m0mZHFX+ELmr0q6doDWigTk4BeyxnjByvNejl2g56LD9TNosfT0FbZgalzUcLUhhTprf6kwc9r403YxlVVgpjbxfYzEkCCZ2vexZlaBe6bweknREZsXGjgHUYe+lPZwlNmxC37gKcM2ucZk1atZu+ZDHQ+xgkArt+seyTiwE3WsxpSzDksp+ogfhtTsyrTsJrWy2GZE/PD21l3MMiIedRSMtElqDrW47Mb3r70C3vTkHgvKUoKc8ygG8j5oXPcpoTUz5ZmXTTQuKrw/xSFFpXN3Nz6OrB3jlgYwT9gV/cMXLGzhihfAFly6pOGMwwzCtcR4YnatYsFjQoiz/ySg4qVTJjF5qCpKI95fHjCmdmRuR6QnrWeTeHKwG+TfJAhYvvZRv5l0H6wtBbRoEW724BjDa8vaTGjNCEQ62tbdcvYvo0+v+JYdP4uE13awjB5Uo18C8mRY/oeeUk4HMTxje71V9THLbNaRQ7SQmhdzcTaVoiWGYfcSQYqUl2j466DG7E/CinNqoXrvF2PqM+iQtO8yJvrj2tetkckH6tdZ2TDMLoe0x9GbXXy03Wjsi+Sg8tJbMbeUyCfl5VWpJ2imF49IkrVG/17ONd525elcjGtCC2DjKQEbXz0MtWX8JaCj3mo44GkAUFbCNHVZWksVTipQJXjl1Gp/Lf3feW64DW51omcpUhNAPWdj5wuZ7IHKYE/aE8jjWWCNtX0gtH0dmUUVWVbJxlbegBvEtbDt1ycGjOH7kMIEZ8B81U+f+Z7fZbuAsvHNZFKkodqAGV9/Mo+o7AYnilvYUf1wC09By3a6pF8coHLZO40Uf6b9w77fhYQ0kkk/mj+lKPi/253yRBDpVBmWq4PCsIZT/7TYJPVInezotRzE7j8aLY0XQ3RiMtT+9swvZ/ZaHU68/2uBa0JAxbHk3MDwx68hQTlL8mIdW2WpK3ntZ6nTRx+NkKNjbTmFx5Mw6Yv+cUp5WgWHV3r/guVumDscoCNw1cEiBE3p7LOabJvU6bZPQr+pvJVW5/RbSsha7QvF252VnYKN7bEAQyMi6KgdbBApUJESf7Tg1RTpU0AAAAAAAA=="
+                  alt=""
+                />
+              </div>
+              <!-- <div class="flex flex-col justify-between ml-4 flex-grow">
+                            <span class="font-bold text-sm">Iphone 6S</span>
+                            <span class="text-red-500 text-xs">Apple</span>
+                            <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
+                        </div> -->
+              <div class="flex items-center ml-4">
+                <p>Vegetable’s Package</p>
+              </div>
+            </div>
+            <div class="flex justify-center w-1/5">
+              <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
+                <path
+                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                />
+              </svg>
+
+              <input
+                class="mx-2 border text-center w-8"
+                type="text"
+                value="1"
+              />
+
+              <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                />
+              </svg>
+            </div>
+            <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
+            <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+              />
+            </svg>
+          </div>
+
+          <div class="flex justify-between items-center h-14 pt-6">
+            <a href="#" class="flex font-semibold text-green-400 text-sm">
+              <svg
+                class="fill-current mr-2 text-green-400 w-4"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"
+                />
+              </svg>
+              Continue Shopping
+            </a>
+
+            <button
+              class="
+                flex
+                items-center
+                px-4
+                py-3
+                border border-transparent
+                shadow-md
+                text-sm
+                leading-4
+                font-medium
+                rounded-md
+                text-white
+                bg-green-400
+                hover:bg-green-600
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-indigo-500
+              "
+            >
+              <svg class="fill-current w-4 mr-2" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z"
+                />
+              </svg>
+
+              update cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-12 px-10 py-10">
+        <div class="col-start-1 col-end-6 gap-2 bg-white shadow-md rounded-md">
+          <h1 class="font-bold text-2xl capitalize">Discount Codes</h1>
+          <div class="flex justify-between items-center pt-4">
+            <div className="mt-1">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                placeholder="you@example.com"
+              />
+            </div>
+            <button
+              type="button"
+              class="
+                inline-flex
+                items-center
+                px-10
+                py-3
+                tracking-widest
+                border border-transparent
+                text-sm
+                leading-4
+                font-medium
+                rounded-md
+                text-white
+                bg-green-400
+                hover:bg-green-700
+                focus:outline-none
+                focus:ring-2
+                focus:ring-offset-2
+                focus:ring-indigo-500
+                capitalize
+                shadow-md
+              "
+            >
+              apply coupon
+            </button>
+          </div>
+        </div>
+        <div class="col-start-7 col-end-12">
+            <div class="bg-white shadow-md rounded-md px-8 py-4">
+                 <h1 class="capitalize font-bold text-xl">cart total</h1>
+                 <div class="flex items-center justify-between pt-5 pb-5">
+                     <p class="capitalize font-bold">sub total</p>
+                     <p class="capitalize font-bold text-red-500">$454.98</p>
+                 </div>
+                 <div class="flex items-center justify-between pb-7">
+                     <p class="capitalize font-bold">total</p>
+                     <p class="capitalize font-bold text-red-500">$454.98</p>
+                 </div>
+                 <button class="w-full bg-green-400 py-2">procceed to checkout</button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

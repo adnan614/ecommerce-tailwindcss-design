@@ -1,0 +1,20 @@
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #0ea0c5;
+  color: white;
+  transform: scaleX(1.1);
+  transform: scaleY(1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
