@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icche Puron</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container mx-auto px-10 py-20 flex">
+        <div class="w-3/5 mb-10">
+            <h1 class="text-xl mb-7">choose your payment method</h1>
+            <div>
+                <div class="flex items-center mr-4 mb-4">
+                    <input id="radio1" type="radio" name="radio" class="hidden" checked />
+                    <fieldset class="w-full">
+                        <label class="border-gray-200 rounded-tl-md rounded-tr-md relative border p-4 flex items-center cursor-pointer ">
+                            <input type="radio" name="privacy-setting" value="Public access" class="h-7 w-7 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="privacy-setting-0-label" aria-describedby="privacy-setting-0-description">
+                            <div class="ml-5 flex items-center justify-between w-full">
+                                
+                                <span id="privacy-setting-0-label" class="text-gray-900 block text-base font-medium">
+                                    cash on delivery
+                                </span>
+                                <div>
+                                    <svg data-v-652d34ac="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10"><path data-v-652d34ac="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                </div>
+                                
+                            </div>
+                            
+                        </label>
+                        
+                        <label class="border-gray-200 rounded-tl-md rounded-tr-md relative border p-4 flex items-center cursor-pointer mt-5">
+                            <input type="radio" name="privacy-setting" value="Public access" class="h-7 w-7 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="privacy-setting-0-label" aria-describedby="privacy-setting-0-description">
+                            <div class="ml-5 flex items-center justify-between w-full">
+                                
+                                <span id="privacy-setting-0-label" class="text-gray-900 block text-base font-medium">
+                                    pay now
+                                </span>
+                                <div>
+                                    <svg data-v-652d34ac="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10"><path data-v-652d34ac="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                </div>
+                                
+                            </div>
+                            
+                        </label>
+                        
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="flex items-center h-5 space-x-4 p-5">
+                <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                 <p id="comments-description" class="text-gray-500 text-sm">By continuing,i agree to organi's <span><a href="#" class="cursor-pointer text-blue-500 underline">terms & condition</a>, <a href="#" class="cursor-pointer text-blue-500 underline capitalize">privacy policy</a> and <a href="#" class="cursor-pointer text-blue-500 underline capitalize">refund policy</a></span> </p>
+            </div>
+
+            <div class="p-5">
+            <button  class="bg-darkred-100 lg:px-4 px-3 lg:py-1 rounded text-white focus:outline-none hover:bg-darkred-50"><span class="flex py-2 px-5"><span >Place order</span></span></button>
+            </div>
+        </div>
+        <div class="w-2/5">
+            <h1 class="text-xl mb-7">order summery</h1>
+            <div class="bg-white p-5 border-2 shadow-md rounded-md">
+                <div class="flex justify-between pb-3">
+                    <span class="capitalize text-sm font-medium">sub total</span>
+                    <span class="capitalize text-sm font-light">৳ 1,299.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="capitalize text-sm font-medium">shipping fee</span>
+                    <span class="capitalize text-sm font-light">৳ 0.00</span>
+                </div>
+                <p class="text-red-600 pt-2 text-sm">[ NOTE: Shipping Charge will be applicable based on product items. ]</p>
+                
+                <div class="flex mt-5">
+                    
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="text" name="email" id="email" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="coupon code">
+                    <div class="ml-2">
+                        <button  class="px-5 py-3 text-white hover:bg-darkred-50 bg-darkred-100 rounded focus:outline-none">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+                
+                <p class="border-b-2 border-gray-200  w-full pt-10"></p>
+                
+                <div class="flex justify-between pt-2">
+                    <span class="capitalize text-base">Total:</span>
+                    <span class="capitalize text-base">৳ 1,299.00</span>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    </html>
+    
